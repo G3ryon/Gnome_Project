@@ -17,7 +17,7 @@ public class Hunter extends Client {
     /**
      * 
      */
-    public void Hunt() {
+    public void Hunt(String name) {
         Stock stock = stock.getInstance();
 
         String gnomeCaracteristic = HuntRandomGnome();
@@ -25,6 +25,7 @@ public class Hunter extends Client {
         switch(gnomeCaracteristic) {
             case "Shiny":
                 Shiny shiny = new Shiny();
+                shiny.setName(name);
                 stock.addGnome(shiny);
                 break;
             case "DelicateHands":
