@@ -9,7 +9,8 @@ public class Hunter extends Client {
     /**
      * Default constructor
      */
-    public Hunter() {
+    public Hunter(String name, String surname) {
+        super(name, surname);
     }
 
 
@@ -17,7 +18,7 @@ public class Hunter extends Client {
      * 
      */
     public void Hunt() {
-        // TODO implement here
+        
     }
 
 }
