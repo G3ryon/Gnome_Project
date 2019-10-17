@@ -4,18 +4,28 @@ import java.util.*;
 /**
  * 
  */
-public class Stock {
+public final class Stock {
+
+    private static Stock instance;
 
     /**
      * Default constructor
      */
-    public Stock() {
+    private Stock() {
+    }
+
+    public synchronized static Stock getInstance() {
+        if (instance == null)
+        {
+            instance = new Stock()
+        }
+        return instance
     }
 
     /**
      * 
      */
-    public void ListGnomeStock[ ];
+    public void ListGnomeStock<>;
 
     /**
      * 
@@ -27,8 +37,9 @@ public class Stock {
     /**
      * 
      */
-    public void AddGnome() {
+    public void AddGnome(int Age, string SkinColour, float Size, String Build, String Sex, String Name, float Price) {
         // TODO implement here
+        ListGnomeStock.add(new Gnome(Age, SkinColour, size, Build, Sex, Name, Price));
     }
 
     /**
