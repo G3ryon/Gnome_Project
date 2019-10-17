@@ -15,7 +15,7 @@ public class Handicaped extends Gnome {
     /**
      * 
      */
-    public void PriceMultiplier = 0.5;
+    public float PriceMultiplier = 0.5;
 
     /**
      * 

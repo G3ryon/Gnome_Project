@@ -15,7 +15,7 @@ public class DelicateHands extends Gnome {
     /**
      * 
      */
-    public void PriceMultiplier = 2;
+    public float PriceMultiplier = 2;
 
     /**
      * 

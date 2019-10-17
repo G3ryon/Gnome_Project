@@ -6,21 +6,24 @@ import java.util.*;
  */
 public class Client {
 
+
+    /**
+     *
+     */
+    private String name;
+
+    /**
+     *
+     */
+    private String surname;
+
     /**
      * Default constructor
      */
-    public Client() {
+    public Client(String name, String surname) {
+        this.name = name;
+        this.surname = surname;
     }
-
-    /**
-     * 
-     */
-    public void Name;
-
-    /**
-     * 
-     */
-    public void Surname;
 
 
     /**
