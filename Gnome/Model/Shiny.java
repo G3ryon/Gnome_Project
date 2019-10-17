@@ -15,7 +15,7 @@ public class Shiny extends Gnome {
     /**
      * 
      */
-    public void PriceMultiplier = 3;
+    public float PriceMultiplier = 3;
 
     /**
      * 
