@@ -18,7 +18,42 @@ public class Hunter extends Client {
      * 
      */
     public void Hunt() {
-        
+        Stock stock = stock.getInstance();
+
+        String gnomeCaracteristic = HuntRandomGnome();
+
+        switch(gnomeCaracteristic) {
+            case "Shiny":
+                Shiny shiny = new Shiny();
+                stock.addGnome(shiny);
+                break;
+            case "DelicateHands":
+                DelicateHands delicateHands = new DelicateHands();
+                stock.addGnome(delicateHands)
+                break;
+            case "Handicaped":
+                Handicaped handicaped = new Handicaped();
+                stock.addGnome(handicaped)
+                break;
+            case "Special":
+                Special special = new Special();
+                stock.addGnome(special)
+                break;
+            case "Normal":
+                break;
+            default:
+                // code block
+        }
+
+        stock.addGnome()
+    }
+
+    public void HuntRandomGnome() {
+        Random rand = new Random();
+        List<String> givenList = Arrays.asList("Shiny", "DelicateHands", "Handicaped", "Special", "Normal");
+
+        String gnomeCaracteristic = givenList.get(rand.nextInt(givenList.size()));
+        return gnomeCaracteristic;
     }
 
 }
