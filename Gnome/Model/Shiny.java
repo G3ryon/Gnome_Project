@@ -1,4 +1,4 @@
-
+package Model
 import java.util.*;
 
 /**
@@ -12,6 +12,7 @@ public class Shiny extends Gnome {
     private float Size;
     private String Build;
     private String Sex;
+
     /**
      * Default constructor
      */

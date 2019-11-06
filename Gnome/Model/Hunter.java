@@ -26,6 +26,7 @@ public class Hunter extends Client {
             case "Shiny":
                 Shiny shiny = new Shiny();
                 shiny.setName(name);
+                shiny.set
                 stock.addGnome(shiny);
                 break;
             case "DelicateHands":

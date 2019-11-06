@@ -1,4 +1,4 @@
-
+package Model
 import java.util.*;
 
 /**
@@ -72,54 +72,54 @@ public class Gnome {
         this.Name = name;
     }
 
-    public void setAge(float age)
-    {
-        this.Age = age;
-    }
-
-    public void setSkinColour(String skincolour)
-    {
-        this.SkinColour = skincolour;
-    }
-
-    public void setSize(String size)
-    {
-        this.Size = size;
-    }
-
-    public void setbuild(String build)
-    {
-        this.Build = build;
-    }
-
-    public void setSex(String sex)
-    {
-        this.Sex = sex;
-    }
+//    public void setAge(float age)
+//    {
+//        this.Age = age;
+//    }
+//
+//    public void setSkinColour(String skincolour)
+//    {
+//        this.SkinColour = skincolour;
+//    }
+//
+//    public void setSize(String size)
+//    {
+//        this.Size = size;
+//    }
+//
+//    public void setbuild(String build)
+//    {
+//        this.Build = build;
+//    }
+//
+//    public void setSex(String sex)
+//    {
+//        this.Sex = sex;
+//    }
 
     public String getName() {
         return Name;
     }
 
-    public int getAge() {
-        return Age;
-    }
-
-    public String getSkinColour(){
-        return SkinColour;
-    }
-
-    public String getSize() {
-        return Size;
-    }
-
-    public String getBuild() {
-        return Build;
-    }
-
-    public String getSex() {
-        return Sex;
-    }
+//    public int getAge() {
+//        return Age;
+//    }
+//
+//    public String getSkinColour(){
+//        return SkinColour;
+//    }
+//
+//    public String getSize() {
+//        return Size;
+//    }
+//
+//    public String getBuild() {
+//        return Build;
+//    }
+//
+//    public String getSex() {
+//        return Sex;
+//    }
 
 
     /**
