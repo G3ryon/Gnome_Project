@@ -1,25 +1,71 @@
-
 import java.util.*;
 
 /**
- * 
+ *
  */
 public class Handicaped extends Gnome {
+
+    public double PriceMultiplier = 0.5;
 
     /**
      * Default constructor
      */
-    public Handicaped() {
+    public Handicaped(int id, String name, int age, String skincolour,String size,String build,String sex) {
+        super(id, name, age, skincolour, size, build, sex);
     }
 
-    /**
-     * 
-     */
-    public float PriceMultiplier = 0.5;
+    public Handicaped() {
+        super(0, null, 0, null, null, null, null);
+    }
 
-    /**
-     * 
-     */
+    @Override
+    public void setAge(){
+        List<Integer> givenList = Arrays.asList(6, 7, 8);
+        int age = RandomGnomeInt(givenList);
+        this.Age = age;
+    }
+
+    @Override
+    public void setSkinColour() {
+        List<String> givenList = Arrays.asList("red", "blue", "white");
+        String skinColour = RandomGnomeString(givenList);
+        this.SkinColour = skinColour;
+    }
+
+    @Override
+    public void setSize(){
+        List<String> givenList = Arrays.asList("small", "medium", "large");
+        String size = RandomGnomeString(givenList);
+        this.Size = size;
+    }
+
+    @Override
+    public void setBuild() {
+        List<String> givenList = Arrays.asList("normal", "thick");
+        String build = RandomGnomeString(givenList);
+        this.Build = build;
+    }
+
+    @Override
+    public void setSex(){
+        List<String> givenList = Arrays.asList("female", "male");
+        String sex = RandomGnomeString(givenList);
+        this.Sex = sex;
+    }
+
+
+    public String RandomGnomeString(List<String> givenList) {
+        Random rand = new Random();
+        String gnomeCaracteristic = givenList.get(rand.nextInt(givenList.size()));
+        return gnomeCaracteristic;
+    }
+
+    public int RandomGnomeInt(List<Integer> givenList) {
+        Random rand = new Random();
+        int gnomeCaracteristic = givenList.get(rand.nextInt(givenList.size()));
+        return gnomeCaracteristic;
+    }
+
     public void Work() {
         // TODO implement here
     }
