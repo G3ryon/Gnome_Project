@@ -1,12 +1,14 @@
 import static org.junit.jupiter.api.Assertions.*;
 
-class GnomeTest extends Gnome {
+class GnomeTest{
 
     @org.junit.jupiter.api.Test
     void getPrice() {
-        
+        Gnome michel = new Handicaped(1,"michel",12,"red","small","thick","female",0.5);
+        michel.calculatePrice(0.5);
 
     }
+
 
     @org.junit.jupiter.api.Test
     void testSetId() {

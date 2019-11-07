@@ -10,12 +10,12 @@ public class Handicaped extends Gnome {
     /**
      * Default constructor
      */
-    public Handicaped(int id, String name, int age, String skincolour,String size,String build,String sex) {
-        super(id, name, age, skincolour, size, build, sex);
+    public Handicaped(int id, String name, int age, String skincolour,String size,String build,String sex,double price) {
+        super(id, name, age, skincolour, size, build, sex, price);
     }
 
     public Handicaped() {
-        super(0, null, 0, null, null, null, null);
+        super(0, null, 0, null, null, null, null, 0);
     }
 
     @Override
@@ -51,6 +51,11 @@ public class Handicaped extends Gnome {
         List<String> givenList = Arrays.asList("female", "male");
         String sex = RandomGnomeString(givenList);
         this.Sex = sex;
+    }
+
+    @Override
+    public void setPrice() {
+        this.Price = calculatePrice(PriceMultiplier);
     }
 
 

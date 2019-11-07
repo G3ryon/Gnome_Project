@@ -10,12 +10,12 @@ public class Special extends Gnome {
     /**
      * Default constructor
      */
-    public Special(int id, String name, int age, String skincolour,String size,String build,String sex) {
-        super(id, name, age, skincolour, size, build, sex);
+    public Special(int id, String name, int age, String skincolour,String size,String build,String sex, double price) {
+        super(id, name, age, skincolour, size, build, sex, price);
     }
 
     public Special() {
-        super(0, null, 0, null, null, null, null);
+        super(0, null, 0, null, null, null, null,0);
     }
 
     @Override
@@ -53,6 +53,10 @@ public class Special extends Gnome {
         this.Sex = sex;
     }
 
+    @Override
+    public void setPrice() {
+        this.Price = calculatePrice(PriceMultiplier);
+    }
 
     public String RandomGnomeString(List<String> givenList) {
         Random rand = new Random();

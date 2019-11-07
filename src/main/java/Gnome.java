@@ -55,14 +55,14 @@ public abstract class Gnome {
     protected String Build;
     protected String Sex;
     protected String Name;
-    private double Price;
+    protected double Price;
     private int IdSetter = 0;
 
 
      /**
      * Default constructor
      */
-    public Gnome(int id, String name, int age, String skincolour, String size, String build, String sex) {
+    public Gnome(int id, String name, int age, String skincolour, String size, String build, String sex,double price) {
         this.Id = id;
         this.Name = name;
         this.Age = age;
@@ -70,7 +70,7 @@ public abstract class Gnome {
         this.Size=size;
         this.Build=build;
         this.Sex=sex;
-        //this.Price=this.GetPrice();
+        this.Price=price;
     }
 
     protected void setId() {
@@ -92,6 +92,8 @@ public abstract class Gnome {
     public abstract void setBuild();
 
     public abstract void setSex();
+
+     public abstract void setPrice();
 
     public String getName() {
         return Name;
@@ -117,6 +119,8 @@ public abstract class Gnome {
         return Sex;
     }
 
+    public double getPrice() { return Price;}
+
 
     /**
      * 
@@ -133,15 +137,24 @@ public abstract class Gnome {
         // TODO implement here
     }
 
-    public double GetPrice() {
-       double Price = 0;
+    public double calculatePrice(double multiplier) {
+        double Price = 0;
         Price += PriceMap.get("Colour").get(this.SkinColour);
         Price += PriceMap.get("Sex").get(this.Sex);
         Price += PriceMap.get("Build").get(this.Build);
         Price += PriceMap.get("Size").get(this.SkinColour);
-        Price += PriceMap.get("Age").get(this.Age);
+        if (this.Age < 5) {
+            Price += PriceMap.get("Age").get("less5");
+        } else if (this.Age<8) {
+            Price += PriceMap.get("Age").get("more8less5");
+        } else if (this.Age<12) {
+            Price += PriceMap.get("Age").get("more12less8");
+        }else{
+            Price += PriceMap.get("Age").get("more12");
+        }
 
-        return Price ;
+
+        return Price*multiplier;
     }
 
 }
