@@ -1,4 +1,3 @@
-package Model
 import java.util.*;
 
 /**
@@ -137,8 +136,14 @@ public class Gnome {
         // TODO implement here
     }
 
-    public void GetPrice() {
-        // TODO implement here
+    public float GetPrice() {
+        int price = 0;
+        price += pricemap.get(colour.get(this.SkinColour));
+        price += pricemap.get(sex.get(this.Sex));
+        price += pricemap.get(Build.get(this.Build));
+        price += pricemap.get(Size.get(this.Size));
+
+        return price ;
     }
 
 }
