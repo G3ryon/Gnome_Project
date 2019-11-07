@@ -17,20 +17,20 @@ public final class Stock {
     public synchronized static Stock getInstance() {
         if (instance == null)
         {
-            instance = new Stock()
+            instance = new Stock();
         }
-        return instance
+        return instance;
     }
 
     /**
      * List of the Gnomes in stock
      */
-    public void ListGnomeStock<>;
+    public List<Gnome> ListGnomeStock;
 
     /**
      * List of the Gnomes currently rented
      */
-    public void ListRentedGnome[ ];
+    public List<Gnome> ListRentedGnome;
 
 
     /**
@@ -44,11 +44,11 @@ public final class Stock {
     /**
      * Remove a Gnome from the Stock
      */
-    public void DelGnome(String name) {
+    public void DelGnome(Gnome gnome) {
         // TODO implement here
-        for (Iterator<ListGnomeStock> iterator = gnome.listIterator(); iter.hasNext(); ) {
+        for (Iterator<Gnome> iterator = gnome.listIterator(); iter.hasNext(); ) {
             String a = iter.next();
-            if (gnome.Name == name) {
+            if (gnome.ID == id) {
                 iter.remove();
             }
         }
@@ -57,13 +57,13 @@ public final class Stock {
     /**
      * Move a Gnome from the Stock to the rented list
      */
-    public void MoveGnome(String name) {
+    public void MoveGnome(Gnome gnome) {
         // TODO implement here
-        for(Iterator<ListGnomeStock> iterator = gnome.iterator() ; iterator.hasNext();){
-            ListGnomeStock current = iterator.next();
-            if(current.Name.equals(name)){
+        for(Iterator<String> iterator = gnome.iterator() ; iterator.hasNext();){
+            String current = iterator.next();
+            if(current.Gnome.equals(gnome)){
                 iterator.remove();
-                ListRentedGnome.add(gnome)
+                ListRentedGnome.add(gnome);
                 break;
             }
         }
