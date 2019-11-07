@@ -17,38 +17,38 @@ public final class Stock {
     public synchronized static Stock getInstance() {
         if (instance == null)
         {
-            instance = new Stock()
+            instance = new Stock();
         }
-        return instance
+        return instance;
     }
 
     /**
      * List of the Gnomes in stock
      */
-    public void ListGnomeStock<>;
+    public List<Gnome> listGnomeStock;
 
     /**
      * List of the Gnomes currently rented
      */
-    public void ListRentedGnome[ ];
+    public List<Gnome> listRentedGnome;
 
 
     /**
      * Add a Gnome to the Stock
      */
-    public void AddGnome(Gnome gnome) {
+    public void addGnome(Gnome gnome) {
         // TODO implement here
-        ListGnomeStock.add(gnome);
+        listGnomeStock.add(gnome);
     }
 
     /**
      * Remove a Gnome from the Stock
      */
-    public void DelGnome(String name) {
+    public void delGnome(Gnome gnome) {
         // TODO implement here
-        for (Iterator<ListGnomeStock> iterator = gnome.listIterator(); iter.hasNext(); ) {
-            String a = iter.next();
-            if (gnome.Name == name) {
+        for (Iterator<Gnome> iter = listGnomeStock; iter.hasNext(); ) {
+            Gnome a = iter.next();
+            if (iter == gnome) {
                 iter.remove();
             }
         }
@@ -57,14 +57,13 @@ public final class Stock {
     /**
      * Move a Gnome from the Stock to the rented list
      */
-    public void MoveGnome(String name) {
+    public void moveGnome(Gnome gnome) {
         // TODO implement here
-        for(Iterator<ListGnomeStock> iterator = gnome.iterator() ; iterator.hasNext();){
-            ListGnomeStock current = iterator.next();
-            if(current.Name.equals(name)){
-                iterator.remove();
-                ListRentedGnome.add(gnome)
-                break;
+        for (Iterator<Gnome> iter = list.listIterator(); iter.hasNext(); ) {
+            Gnome a = iter.next();
+            if (iter == gnome) {
+
+                iter.remove();
             }
         }
     }

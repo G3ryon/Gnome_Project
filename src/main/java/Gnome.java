@@ -4,17 +4,10 @@ import java.util.*;
 /**
  * 
  */
-public class Gnome {
+public abstract class Gnome {
+    // abstract class to override method class from subclass
 
     private int Id;
-    private String Age;
-    private String SkinColour;
-    private String Size;
-    private String Build;
-    private String Sex;
-    private String Name;
-    private double Price;
-
 
     private static Map<String,Map<String, Double>> PriceMap = new HashMap<String, Map<String, Double>>();
     private static Map<String, Double> Caract = new HashMap<String, Double>();
@@ -54,77 +47,75 @@ public class Gnome {
         Caract.clear();
     }
 
+    
+    // set to protected to allow subclasses to access variables
+    protected int Age;
+    protected String SkinColour;
+    protected String Size;
+    protected String Build;
+    protected String Sex;
+    protected String Name;
+    private double Price;
+    private int IdSetter = 0;
+
+
      /**
      * Default constructor
      */
-    public Gnome(int id,String name,String age,String skincolour,String size,String build,String sex) {
+    public Gnome(int id, String name, int age, String skincolour, String size, String build, String sex) {
         this.Id = id;
         this.Name = name;
-//        this.Age = age;
-//        this.SkinColour = skincolour;
-//        this.Size=size;
-//        this.Build=build;
-//        this.Sex=sex;
-        this.Price=this.GetPrice();
+        this.Age = age;
+        this.SkinColour = skincolour;
+        this.Size=size;
+        this.Build=build;
+        this.Sex=sex;
+        //this.Price=this.GetPrice();
     }
 
-    public void setId(Integer id) {
-        this.Id = id;
+    protected void setId() {
+        this.Id = this.IdSetter;
+        IdSetter += 1;
     }
 
-    public void setName(String name)
+    protected void setName(String name)
     {
         this.Name = name;
     }
 
-//    public void setAge(float age)
-//    {
-//        this.Age = age;
-//    }
-//
-//    public void setSkinColour(String skincolour)
-//    {
-//        this.SkinColour = skincolour;
-//    }
-//
-//    public void setSize(String size)
-//    {
-//        this.Size = size;
-//    }
-//
-//    public void setbuild(String build)
-//    {
-//        this.Build = build;
-//    }
-//
-//    public void setSex(String sex)
-//    {
-//        this.Sex = sex;
-//    }
+    public abstract void setAge();
+
+    public abstract void setSkinColour();
+
+    public abstract void setSize();
+
+    public abstract void setBuild();
+
+    public abstract void setSex();
 
     public String getName() {
         return Name;
     }
 
-//    public int getAge() {
-//        return Age;
-//    }
-//
-//    public String getSkinColour(){
-//        return SkinColour;
-//    }
-//
-//    public String getSize() {
-//        return Size;
-//    }
-//
-//    public String getBuild() {
-//        return Build;
-//    }
-//
-//    public String getSex() {
-//        return Sex;
-//    }
+    public int getAge() {
+        return Age;
+    }
+
+    public String getSkinColour(){
+        return SkinColour;
+    }
+
+    public String getSize() {
+        return Size;
+    }
+
+    public String getBuild() {
+        return Build;
+    }
+
+    public String getSex() {
+        return Sex;
+    }
 
 
     /**
