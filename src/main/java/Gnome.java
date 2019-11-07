@@ -4,8 +4,10 @@ import java.util.*;
  * 
  */
 public abstract class Gnome {
+    // abstract class to override method class from subclass
 
     private int Id;
+    // set to protected to allow subclasses to access variables
     protected int Age;
     protected String SkinColour;
     protected String Size;
@@ -30,12 +32,12 @@ public abstract class Gnome {
         //this.Price=this.GetPrice();
     }
 
-    public void setId() {
+    protected void setId() {
         this.Id = this.IdSetter;
         IdSetter += 1;
     }
 
-    public void setName(String name)
+    protected void setName(String name)
     {
         this.Name = name;
     }

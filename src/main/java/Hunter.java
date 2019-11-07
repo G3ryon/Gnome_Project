@@ -51,16 +51,13 @@ public class Hunter extends Client {
             default:
                 // code block
         }
-
-        stock.addGnome();
     }
 
-    public String HuntRandomGnome() {
+    private String HuntRandomGnome() {
         Random rand = new Random();
         List<String> givenList = Arrays.asList("Shiny", "DelicateHands", "Handicaped", "Special", "Normal");
 
-        String gnomeCaracteristic = givenList.get(rand.nextInt(givenList.size()));
-        return gnomeCaracteristic;
+        return givenList.get(rand.nextInt(givenList.size()));
     }
 
 }

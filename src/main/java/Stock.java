@@ -46,7 +46,7 @@ public final class Stock {
      */
     public void delGnome(Gnome gnome) {
         // TODO implement here
-        for (Iterator<Gnome> iter = list.listGnomeStock; iter.hasNext(); ) {
+        for (Iterator<Gnome> iter = listGnomeStock; iter.hasNext(); ) {
             Gnome a = iter.next();
             if (iter == gnome) {
                 iter.remove();

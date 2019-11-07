@@ -14,6 +14,7 @@ public class Shiny extends Gnome {
         super(id, name, age, skincolour, size, build, sex);
     }
 
+    // void constructor to create new instance without parameters
     public Shiny() {
         super(0, null, 0, null, null, null, null);
     }
