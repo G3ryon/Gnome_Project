@@ -117,6 +117,18 @@ public abstract class Gnome {
         return Sex;
     }
 
+    protected String RandomGnomeString(List<String> givenList) {
+        Random rand = new Random();
+        String gnomeCaracteristic = givenList.get(rand.nextInt(givenList.size()));
+        return gnomeCaracteristic;
+    }
+
+    protected int RandomGnomeInt(List<Integer> givenList) {
+        Random rand = new Random();
+        int gnomeCaracteristic = givenList.get(rand.nextInt(givenList.size()));
+        return gnomeCaracteristic;
+    }
+
 
     /**
      * 
