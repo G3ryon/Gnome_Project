@@ -25,30 +25,30 @@ public final class Stock {
     /**
      * List of the Gnomes in stock
      */
-    public List<Gnome> ListGnomeStock;
+    public List<Gnome> listGnomeStock;
 
     /**
      * List of the Gnomes currently rented
      */
-    public List<Gnome> ListRentedGnome;
+    public List<Gnome> listRentedGnome;
 
 
     /**
      * Add a Gnome to the Stock
      */
-    public void AddGnome(Gnome gnome) {
+    public void addGnome(Gnome gnome) {
         // TODO implement here
-        ListGnomeStock.add(gnome);
+        listGnomeStock.add(gnome);
     }
 
     /**
      * Remove a Gnome from the Stock
      */
-    public void DelGnome(Gnome gnome) {
+    public void delGnome(Gnome gnome) {
         // TODO implement here
-        for (Iterator<Gnome> iterator = gnome.listIterator(); iter.hasNext(); ) {
-            String a = iter.next();
-            if (gnome.ID == id) {
+        for (Iterator<Gnome> iter = list.listGnomeStock; iter.hasNext(); ) {
+            Gnome a = iter.next();
+            if (iter == gnome) {
                 iter.remove();
             }
         }
@@ -57,14 +57,13 @@ public final class Stock {
     /**
      * Move a Gnome from the Stock to the rented list
      */
-    public void MoveGnome(Gnome gnome) {
+    public void moveGnome(Gnome gnome) {
         // TODO implement here
-        for(Iterator<String> iterator = gnome.iterator() ; iterator.hasNext();){
-            String current = iterator.next();
-            if(current.Gnome.equals(gnome)){
-                iterator.remove();
-                ListRentedGnome.add(gnome);
-                break;
+        for (Iterator<Gnome> iter = list.listIterator(); iter.hasNext(); ) {
+            Gnome a = iter.next();
+            if (iter == gnome) {
+
+                iter.remove();
             }
         }
     }
