@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1652c153-7a71-43dd-9f5d-cd7ae7fda808" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Gnome_Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Gnome_Project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gnome/Model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gnome/Model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gnome/Model/DelicateHands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DelicateHands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gnome/Model/Gnome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gnome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gnome/Model/Handicaped.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Handicaped.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gnome/Model/Hunter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hunter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gnome/Model/Normal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Normal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gnome/Model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gnome/Model/Shiny.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Shiny.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gnome/Model/Special.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Special.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gnome/Model/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gnome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gnome.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +20,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571306395821" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
