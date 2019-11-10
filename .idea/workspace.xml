@@ -2,21 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1652c153-7a71-43dd-9f5d-cd7ae7fda808" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Gnome_Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Gnome_Project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DelicateHands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DelicateHands.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Gnome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Gnome.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Handicaped.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Handicaped.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Normal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Normal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Shiny.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Shiny.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Special.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Special.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/GnomeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GnomeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StockTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DelicateHands.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DelicateHands.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Gnome.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Gnome.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Handicaped.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Handicaped.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Normal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Normal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Shiny.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Shiny.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Special.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Special.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/GnomeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/GnomeTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +70,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GnomeTest.getPrice">
+  <component name="RunManager" selected="JUnit.GnomeTest.testCreationOfGnomes">
     <configuration name="GnomeTest.getPrice (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="GnomeTest" />
@@ -86,8 +90,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GnomeTest.testCreationOfGnomes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Gnome_Project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GnomeTest" />
+      <option name="METHOD_NAME" value="testCreationOfGnomes" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GnomeTest.testCreationOfGnomes" />
         <item itemvalue="JUnit.GnomeTest.getPrice" />
         <item itemvalue="JUnit.GnomeTest.getPrice (1)" />
       </list>

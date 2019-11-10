@@ -7,8 +7,8 @@ import static java.lang.System.out;
 public abstract class Gnome {
     // abstract class to override method class from subclass
 
-    private int Id;
 
+    public static int IdSetter = 0;
     private static Map<String,Map<String, Double>> PriceMap = new HashMap<String, Map<String, Double>>();
     private static Map<String, Double> CaractColour = new HashMap<String, Double>();
     private static Map<String, Double> CaractSex = new HashMap<String, Double>();
@@ -56,9 +56,12 @@ public abstract class Gnome {
     protected String Sex;
     protected String Name;
     protected double Price;
-    private int IdSetter = 0;
-
-
+    protected int Id;
+    public List<String> ColourList = Arrays.asList("red", "blue", "white","black","yellow","metis");
+    public List<Integer> AgeList = Arrays.asList(5,6,7,8,9,10,11,12,13,14,15);
+    public List<String> SizeList = Arrays.asList("extra_small","extra_large","small", "medium", "large");
+    public List<String> BuildList = Arrays.asList("thin","obese","normal", "thick");
+    public List<String> SexList = Arrays.asList("female", "male","other");
      /**
      * Default constructor
      */
@@ -150,8 +153,8 @@ public abstract class Gnome {
 
     public double calculatePrice(double multiplier) {
         double Price = 0;
-        out.println(this.Age);
-       Price += PriceMap.get("Sex").get(this.Sex);
+
+        Price += PriceMap.get("Sex").get(this.Sex);
         Price += PriceMap.get("Build").get(this.Build);
         Price += PriceMap.get("Size").get(this.Size);
         Price += PriceMap.get("Colour").get(this.SkinColour);

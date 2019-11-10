@@ -20,33 +20,27 @@ public class Normal extends Gnome {
 
     @Override
     public void setAge(){
-        List<Integer> givenList = Arrays.asList(6, 7, 8);
-        this.Age = RandomGnomeInt(givenList);
+        this.Age = RandomGnomeInt(AgeList);
     }
 
     @Override
     public void setSkinColour() {
-        List<String> givenList = Arrays.asList("red", "blue", "white");
-        this.SkinColour = RandomGnomeString(givenList);
+        this.SkinColour = RandomGnomeString(ColourList);
     }
 
     @Override
     public void setSize(){
-        List<String> givenList = Arrays.asList("small", "medium", "large");
-        this.Size = RandomGnomeString(givenList);
+        this.Size = RandomGnomeString(SizeList);
     }
 
     @Override
     public void setBuild() {
-        List<String> givenList = Arrays.asList("normal", "thick");
-        this.Build = RandomGnomeString(givenList);
+        this.Build = RandomGnomeString(BuildList);
     }
 
     @Override
     public void setSex(){
-        List<String> givenList = Arrays.asList("female", "male");
-        String sex = RandomGnomeString(givenList);
-        this.Sex = sex;
+        this.Sex = RandomGnomeString(SexList);;
     }
 
     @Override
