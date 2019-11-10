@@ -1,12 +1,20 @@
 import static org.junit.jupiter.api.Assertions.*;
-
+import static java.lang.System.out;
 class GnomeTest{
 
     @org.junit.jupiter.api.Test
     void getPrice() {
-        Gnome michel = new Handicaped(1,"michel",12,"red","small","thick","female",0.5);
-        michel.calculatePrice(0.5);
+        Gnome michel = new Handicaped();
+        michel.setId();
+        michel.setName("michel");
+        michel.setAge();
+        michel.setBuild();
+        michel.setSex();
+        michel.setSize();
+        michel.setSkinColour();
+        michel.setPrice();
 
+       out.println(michel.SkinColour +' ' + michel.Sex +' ' + michel.Build +' ' + michel.Size+' '+michel.Price  );
     }
 
 
