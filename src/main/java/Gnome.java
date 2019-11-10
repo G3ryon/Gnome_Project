@@ -15,7 +15,7 @@ public abstract class Gnome {
     private static Map<String, Double> CaractSize = new HashMap<String, Double>();
     private static Map<String, Double> CaractBuild = new HashMap<String, Double>();
     private static Map<String, Double> CaractAge = new HashMap<String, Double>();
-    static {
+        static {
         CaractColour.put("blue",69.0);
         CaractColour.put("red",666.0);
         CaractColour.put("white",1.0);
@@ -38,7 +38,6 @@ public abstract class Gnome {
         CaractBuild.put("thick",3.0);
         CaractBuild.put("obese",0.5);
         PriceMap.put("Build",CaractBuild);
-
         CaractAge.put("less5",15.0);
         CaractAge.put("more5less8",10.0);
         CaractAge.put("more8less12",5.0);
@@ -57,11 +56,8 @@ public abstract class Gnome {
     protected String Name;
     protected double Price;
     protected int Id;
-    public List<String> ColourList = Arrays.asList("red", "blue", "white","black","yellow","metis");
-    public List<Integer> AgeList = Arrays.asList(5,6,7,8,9,10,11,12,13,14,15);
-    public List<String> SizeList = Arrays.asList("extra_small","extra_large","small", "medium", "large");
-    public List<String> BuildList = Arrays.asList("thin","obese","normal", "thick");
-    public List<String> SexList = Arrays.asList("female", "male","other");
+    private List<String> TalkList = Arrays.asList("J'ai fait un menhir", "J'ai fait une chaussure","J'ai fait du boudin noire");
+
      /**
      * Default constructor
      */
@@ -76,12 +72,12 @@ public abstract class Gnome {
         this.Price=price;
     }
 
-    protected void setId() {
+    final void setId() {
         this.Id = this.IdSetter;
         IdSetter += 1;
     }
 
-    protected void setName(String name)
+    final void setName(String name)
     {
         this.Name = name;
     }
@@ -140,15 +136,16 @@ public abstract class Gnome {
      * 
      */
     public void Work() {
-        // TODO implement here
+        out.println(RandomGnomeString(TalkList));
     }
 
     public void Idle() {
-        // TODO implement here
+        out.println(RandomGnomeString(TalkList));
     }
 
     public void HandCrafting() {
-        // TODO implement here
+        out.println(RandomGnomeString(TalkList));
+
     }
 
     public double calculatePrice(double multiplier) {
@@ -163,7 +160,7 @@ public abstract class Gnome {
             Price += PriceMap.get("Age").get("less5");
         }else if (this.Age<8) {
             Price += PriceMap.get("Age").get("more5less8");
-        }  else if (this.Age<12) {
+        }else if (this.Age<12) {
             Price += PriceMap.get("Age").get("more8less12");
         }else{
             Price += PriceMap.get("Age").get("more12");

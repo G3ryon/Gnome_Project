@@ -1,11 +1,19 @@
 import java.util.*;
 
+import static java.lang.System.out;
+
 /**
  *
  */
 public class DelicateHands extends Gnome {
 
     public float PriceMultiplier = 2;
+    public List<String> ColourList = Arrays.asList("red", "blue", "white","black","yellow","metis");
+    public List<Integer> AgeList = Arrays.asList(5,6,7,8,9,10,11,12,13,14,15);
+    public List<String> SizeList = Arrays.asList("extra_small","extra_large","small", "medium", "large");
+    public List<String> BuildList = Arrays.asList("thin","obese","normal", "thick");
+    public List<String> SexList = Arrays.asList("female", "male","other");
+    private List<String> TalkList = Arrays.asList("J'ai fait une echarpe brodée", "J'ai fait une venus de milo","J'ai fait une replique de Mona Lisa");
 
     /**
      * Default constructor
@@ -49,7 +57,7 @@ public class DelicateHands extends Gnome {
     }
 
     public void HandCrafting() {
-        // TODO implement here
+        out.println(RandomGnomeString(TalkList));
     }
 
 }

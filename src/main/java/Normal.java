@@ -1,11 +1,19 @@
 import java.util.*;
 
+import static java.lang.System.out;
+
 /**
  *
  */
 public class Normal extends Gnome {
 
     public float PriceMultiplier = 1;
+    private List<String> ColourList = Arrays.asList("red", "blue", "white","black","yellow","metis");
+    private List<Integer> AgeList = Arrays.asList(5,6,7,8,9,10,11,12,13,14,15);
+    private List<String> SizeList = Arrays.asList("extra_small","extra_large","small", "medium", "large");
+    private List<String> BuildList = Arrays.asList("thin","obese","normal", "thick");
+    private List<String> SexList = Arrays.asList("female", "male","other");
+    private List<String> TalkList = Arrays.asList("J'ai fait un collier de nouille", "J'ai fait cadre en pate","J'ai fait un porte clef en perle");
 
     /**
      * Default constructor
@@ -62,7 +70,7 @@ public class Normal extends Gnome {
     }
 
     public void Work() {
-        // TODO implement here
+        out.println(RandomGnomeString(TalkList));
     }
 
 }
