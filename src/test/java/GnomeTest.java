@@ -9,7 +9,7 @@ class GnomeTest{
         if(michel.Price ==372){
             out.println("Test Ok");}
         else{
-            out.println("Test Fail");
+            out.println("Test Fail!");
         }
     }
 
@@ -18,7 +18,7 @@ class GnomeTest{
     void testCreationOfGnomes() { //testing the creation and the id setting
         Gnome Handicaped = new Handicaped();
         Handicaped.setId();
-        Handicaped.setName("Handicaped");
+        Handicaped.setName("Handicapeds");
         Handicaped.setAge();
         Handicaped.setBuild();
         Handicaped.setSex();
@@ -29,7 +29,7 @@ class GnomeTest{
 
         Gnome Shiny = new Shiny();
         Shiny.setId();
-        Shiny.setName("Shiny");
+        Shiny.setName("Shinys");
         Shiny.setAge();
         Shiny.setBuild();
         Shiny.setSex();
@@ -41,7 +41,7 @@ class GnomeTest{
 
         Gnome Handicaped1 = new Handicaped();
         Handicaped1.setId();
-        Handicaped1.setName("Handicaped");
+        Handicaped1.setName("Handicapeds");
         Handicaped1.setAge();
         Handicaped1.setBuild();
         Handicaped1.setSex();
