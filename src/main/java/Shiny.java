@@ -70,7 +70,7 @@ public class Shiny extends Gnome {
     }
 
     public void Idle() {
-        out.println(RandomGnomeString(TalkList));
+        out.println(this.Name + " dit " +RandomGnomeString(TalkList));
     }
 
 }

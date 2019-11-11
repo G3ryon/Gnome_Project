@@ -57,7 +57,7 @@ public class DelicateHands extends Gnome {
     }
 
     public void HandCrafting() {
-        out.println(RandomGnomeString(TalkList));
+        out.println(this.Name + " dit " +RandomGnomeString(TalkList));
     }
 
 }

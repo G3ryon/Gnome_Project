@@ -70,7 +70,7 @@ public class Handicaped extends Gnome {
     }
 
     public void Work() {
-        out.println(RandomGnomeString(TalkList));
+        out.println(this.Name + " dit " +RandomGnomeString(TalkList));
     }
 
 }

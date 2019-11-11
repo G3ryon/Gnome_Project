@@ -36,6 +36,7 @@ class GnomeTest{
         Shiny.setSize();
         Shiny.setSkinColour();
         Shiny.setPrice();
+        Shiny.Idle();
         out.println("Gnome "+ Shiny.Name + " " + Shiny.Id +  ":" + Shiny.SkinColour +' ' + Shiny.Sex +' ' + Shiny.Build +' ' + Shiny.Size+' '+Shiny.Price  );
 
         Gnome Handicaped1 = new Handicaped();

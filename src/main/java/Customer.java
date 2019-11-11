@@ -1,4 +1,6 @@
 
+
+
 import java.util.*;
 
 /**
@@ -9,7 +11,8 @@ public class Customer extends Client {
     /**
      * Default constructor
      */
-    public Customer() {
+    public Customer(String name, String surname) {super(name,surname);
+
     }
 
     /**
